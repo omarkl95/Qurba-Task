@@ -1,0 +1,117 @@
+
+
+.products-page h1{
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1E1E1E;
+}
+.products-page p{
+   
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #1E1E1E;
+}
+.proucts-page-sections {
+    display: flex;
+    flex: 1 1 100%;
+}
+.filters{
+    width: 250px;
+    max-height: 800px;
+    left: 114px;
+    top: 301px;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border: 0.5px solid #424242;
+    border-radius: 8px;
+    overflow: auto;
+}
+.filters .filters-headers{
+ margin-left: 12px;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+color: #1E1E1E;
+}
+.brand-filter-list .brand-filter-list-brand {
+    display: flex;
+    margin: 8px 0px;
+    padding: 4px 0px;
+    font-size: 12px;
+    width: -webkit-fill-available;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.brand-filter-list-brand span {
+    display: flex;
+    align-items: center;
+}
+.brand-filter-list .brand-filter-list-brand .filters-brand{
+    border: 1px solid #e2e5f1;
+    font-size: 16px;
+}
+.products-list{
+    flex: 1 1 0%;
+    min-width: 0px;
+    margin-left: 30px;
+}
+.products-list-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+   
+}
+
+.pagination-container  {
+    margin-top: 20px;
+    .pagination {
+        display: flex;
+        align-items: center;
+    }
+}

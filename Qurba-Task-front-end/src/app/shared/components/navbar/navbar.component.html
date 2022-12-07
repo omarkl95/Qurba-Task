@@ -1,0 +1,28 @@
+
+ <nav>
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+       ClickTick
+    </div>
+    <div class="nav-items">
+       <li><a href="#">Home</a></li>
+      
+    </div>
+    <div class="search-icon">
+       <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+    </div>
+    <form >
+       <input type="search" class="search-data" placeholder="Search" [(ngModel)]="searchValue" [ngModelOptions]="{standalone: true}" (input)="onSearchTextChange()">
+       <button type="submit" class="fas fa-search"></button>
+    </form>
+    <div class="nav-items-right">
+      <li><a href="#">login</a></li>
+      <li><a href="#">Account</a></li>
+  
+   </div>
+  </nav>

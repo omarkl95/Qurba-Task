@@ -1,0 +1,31 @@
+
+
+  <app-navbar></app-navbar>
+
+
+<div class="login-form">
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h3>Login To Your Account</h3>
+  <p>Welcome Back Please Enter Your Details</p>
+
+  <label for="Email">Email</label>
+  <input type="text" 
+  placeholder="Email or Phone"
+   id="username"
+   formControlName="username"
+   >
+
+  <label for="password">Password</label>
+  <input type="password" 
+  placeholder="Password" 
+  id="password"
+  formControlName="password"
+  >
+
+  <button
+  type="submit"
+  [disabled]="loginForm.status === 'INVALID'">Sign In</button>
+ 
+</form>
+</div>

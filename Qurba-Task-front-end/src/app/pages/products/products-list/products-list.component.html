@@ -1,0 +1,56 @@
+
+
+
+<app-navbar (searchTextChanged)="onsearchTextEntered($event)"></app-navbar>
+
+<div class="products-page">
+    <div class="products-page-header">
+      <h1>iphone</h1>
+      <p class="typography">Home / Products / Smart Phones / iPhone</p>
+  
+    </div>
+    <div class="proucts-page-sections">
+      <div class="filters">
+        <span class="filters-headers">Products</span>
+        <div class="brand-filter-list">
+          <label for="" class="brand-filter-list-brand" *ngFor="let categorie of categories">
+            <span >
+              <input class="filters-brand" type="checkbox" value="{{categorie}}" (change)="onChange($event)">
+              {{categorie}} &nbsp;({{categorie.length}})
+            </span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+  
+  <div class="products-list" >
+    <div class="products-list-grid" >
+      <span class=" productContainer" *ngFor = "let product of products | paginate: { itemsPerPage: 10, currentPage: page } | search :searchText:'title'">
+        <div class="card" >
+          <img [src]="product.thumbnail" alt="{{product.thumbnail}}" style="width:100%">
+          <h1>{{product.title}}</h1>
+          <p>{{product.description}}</p>
+          <p class="price">{{product.price}}</p>
+          <div class="brand">
+            <h3>brand :</h3>
+            <span>Apple</span>
+        </div>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </span>
+   
+   
+    
+
+    </div>
+
+  </div>
+     
+
+  
+    </div>
+
+      <!-- ---pagination-starts -->
+      <pagination-controls (pageChange)="page = $event" class="float-right"></pagination-controls>
+
+  </div>
